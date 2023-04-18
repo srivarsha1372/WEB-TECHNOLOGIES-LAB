@@ -1,0 +1,139 @@
+a{
+    color:white;
+}
+main{
+    
+    font-size:30px;
+}
+.social{
+    color:white;
+    text-decoration:none;
+}
+.form {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-family: inherit;
+    justify-content:center;
+    
+    }
+
+    .input {
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    outline: none;
+    }
+
+    .input:focus {
+    outline: 1.2px solid #1877f2;
+    }
+
+    #loginBtn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    align-self: center;
+    background: #1877f2;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    }
+
+    #loginBtn:hover {
+    background: #196fe0;
+    }
+
+    #forgotPassword {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 13px;
+    align-self: center;
+    font-weight: bold;
+    color: #1859f2;
+    }
+
+    #forgotPassword::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: .5px;
+    bottom: -25px;
+    left: 0;
+    background: #6da4ed;
+    }
+
+    #forgotPassword:hover {
+    text-decoration: underline;
+    }
+
+    #createAccountBtn {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 15px 15px;
+    align-self: center;
+    background: #2aa2b7;
+    border: none;
+    border-radius: 5px;
+    color: #e16363;
+    font-size: 2rem;
+    font-weight: bold;
+    }
+
+    #createAccountBtn:hover {
+    background: #1da666;
+    }
+    h1{
+        padding:20px;
+    }
+    .container{
+        margin:20px;
+        padding:10px;
+        top:50px;
+        display:flex;
+        justify-content:center;
+        
+        border-radius:5px;
+        width:540px;
+        align-items:center;
+
+    }
+
+    .profile{
+        margin:50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+    }
+    .feed{
+        margin:10px;
+        padding:10px;
+        
+    }
+    .comment{
+        
+        border-radius:10px;
+        width:100%;
+        height:60px;
+        margin:5px;
+        padding:10px;
+    }
+    .photo{
+        margin:2px;
+        padding:2px;
+    }
+    .a:hover{
+        color:red;
+    }
