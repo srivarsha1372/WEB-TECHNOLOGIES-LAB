@@ -1,0 +1,42 @@
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #7fc255a4;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+select {
+	margin-bottom: 20px;
+}
+
+button {
+	margin-top: 20px;
+	font: 1em sans-serif;
+}
+
+#total-container {
+	text-align: center;
+	margin-top: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#total {
+	font-weight: bold;
+}

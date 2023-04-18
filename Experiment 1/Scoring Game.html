@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            #player {
+                position: absolute;
+                top: 0 px;
+                left: 0 px;
+                width: 40 px;
+                height: 40 px;
+                background-color:aqua;
+            }
+            #score{
+                position: absolute;
+                top: 10px;
+                right: 10 px;
+                font-size: 20 px; 
+            }
+            #coord{
+                position: absolute;
+                right: 600 px;
+                top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="player"></div>
+        <div id="score"></div>
+        <div id="coord"></div>
+        <script>
+            var p=document.getElementById("player");
+            var s=document.getElementById("score");
+            var c=document.getElementById("coord");
+            var score=0;
+            var position={x:0,y:0};
+            document.addEventListener("Keydown",function(event)
+            {
+                documet.body.style.backgroundcolor="red";
+                if(event.key=="ArrowDown")
+                {
+                    position.y+=20;
+                }
+                else if(event.key=="ArrowUp")
+                {
+                    position.y-=20;
+                }
+                else if(event.key=="ArrowLeft")
+                {
+                    position.x-=20;
+                }
+                else if(event.key=="ArrowRight")
+                {
+                    position.x+=20;
+                }
+                p.style.top=postion.y+"px";
+                p.style.left=position.x+"px";
+                c.innerHTML="coord:"+position.x+","+position.y;
+                if(position.x==240 && position.y==240)
+                {
+                    score+=50;
+                    s.innnerHTML="score:"+score;
+                }
+            });
+        </script> 
+    </body>
+</html>

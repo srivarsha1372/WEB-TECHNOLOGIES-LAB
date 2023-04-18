@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bill Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: url(img.jpg) ;">
+	<div class="container">
+		<h1>Restaurant Bill Generator</h1>
+		<table id="order-form">
+			<label for="appetizers">Appetizers:</label>
+			<select id="appetizers" name="appetizers">
+				<option value="0">None</option>
+				<option value="150">Veg Manchuria</option>
+				<option value="190">Chicken 65</option>
+				<option value="220">Appolo Fish</option>
+			</select><br>
+			
+			<label for="drinks">Drinks:</label>
+			<select id="drinks" name="drinks">
+				<option value="0">None</option>
+				<option value="30">Soft Drink</option>
+				<option value="70">Fruit Juice</option>
+				<option value="110">Milkshake</option>
+				<option value="150">MockTails</option>
+			</select><br>
+			
+			<label for="entrees">Main Course:</label>
+			<select id="entrees" name="entrees">
+				<option value="0">None</option>
+				<option value="80">Veg Noodles</option>
+				<option value="100">Chicken Noodles</option>
+				<option value="160">Chicken Fried Rice</option>
+				<option value="220">Chicken Dum Biryani</option>
+			</select><br>
+			
+			<label for="desserts">Desserts:</label>
+			<select id="desserts" name="desserts">
+				<option value="0">None</option>
+				<option value="50">Ice Cream</option>
+				<option value="70">Chocolate Brownie</option>
+				<option value="80">Chocolate Cake</option>
+			</select><br>
+			
+
+			<button type="submit" id="submit-btn">Calculate Total</button>
+		</table>
+
+		<div id="total-container">
+			<p>Your total is: <span id="total"></span></p>
+		</div>
+	</div>
+
+	<script src="script1.js"></script>
+</body>
+</html>
